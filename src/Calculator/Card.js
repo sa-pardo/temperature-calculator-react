@@ -4,12 +4,8 @@ export default class Card extends Component {
   render() {
     return (
       <div className="card">
-        <div className="card-info">
-          <p className="card-number">
-            {this.props.transform(this.props.value)}
-          </p>
-          <p className="card-scale">°{this.props.scale}</p>
-        </div>
+        <p className="card-number">{this.props.transform(this.props.value)}</p>
+        <p className="card-scale">°{this.props.scale}</p>
         <div className="card-scale-name">{this.props.scaleName}</div>
       </div>
     );

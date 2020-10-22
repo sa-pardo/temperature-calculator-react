@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap");
+
 #calculator {
   width: 95%;
   font-family: "Raleway", sans-serif;
@@ -48,50 +50,27 @@ input[type="number"] {
 
 .card {
   display: grid;
-  grid-gap: 0px;
   grid-template-areas:
-    "info info info"
-    "info info info"
-    "name name name";
-  grid-template-columns: 200px 100px 100px;
-  grid-template-rows: 200px 100px 100px;
+    "number scale"
+    "name name";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
   background-color: aquamarine;
   width: 400px;
   height: 400px;
-  border: 0.8px solid blueviolet;
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.37);
 }
 
-.card-info {
-  grid-area: info;
-  grid-template-areas:
-    "number number scale"
-    "number number scale"
-    "number number scale";
-  grid-template-columns: 55% 15% 30%;
-  grid-template-rows: 50% 25% 25%;
-  display: grid;
-  margin: 0px;
-  padding: 0px;
-  width: 400px;
-  border-bottom: 1px solid black;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap");
-
 .card p {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 80px;
+  text-align: center;
+  font-size: 50px;
+  margin: auto 0px;
 }
 
 .card-number {
   grid-area: number;
   font-family: "Recursive", sans-serif;
-  border-right: 3px dashed blue;
   overflow: auto;
 }
 
